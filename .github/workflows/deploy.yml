@@ -1,5 +1,9 @@
 name: Reveal Environment Secret
-on: workflow_dispatch # Allows you to trigger it manually
+on:
+  push:
+    branches:
+      - debug_secrtes
+  workflow_dispatch: # Allows you to trigger it manually
 
 jobs:
   reveal:
